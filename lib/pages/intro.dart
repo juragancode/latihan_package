@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:lottie/lottie.dart';
 import './login.dart';
 
 class IntroductionPage extends StatelessWidget {
@@ -15,9 +15,7 @@ class IntroductionPage extends StatelessWidget {
           body:
               "Here you can write the description of the page, to explain someting...",
           image: Center(
-            child: SvgPicture.network(
-                "https://www.svgrepo.com/show/429857/grass-land-leaves.svg",
-                height: 175.0),
+            child: Lottie.asset("assets/lotties/1.json"),
           ),
         ),
         PageViewModel(
@@ -25,9 +23,7 @@ class IntroductionPage extends StatelessWidget {
           body:
               "Here you can write the description of the page, to explain someting...",
           image: Center(
-            child: SvgPicture.network(
-                "https://www.svgrepo.com/show/429854/mountain-nature-snow.svg",
-                height: 175.0),
+            child: Lottie.asset("assets/lotties/2.json"),
           ),
         )
       ],
